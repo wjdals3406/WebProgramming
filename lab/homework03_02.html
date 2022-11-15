@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>과제3_02</title>
+</head>
+<script>
+let num = prompt("파스칼의 삼각형의 높이 : ");
+function new_row(prev_row) {
+    let row = [];
+
+    row.push(1);
+    for (let i = 1; i <= prev_row; i++) {
+        for (let j = row.length - 1; j > 0; j--) {
+            row[j] = row[j - 1] + row[j];
+        }
+        row.push(1);
+    }
+    return row;
+};
+for(let i=0; i<num; i++){
+    let arr = new_row(i);
+    for(let j=0; j<arr.length; j++){
+        document.write(arr[j] + " ");
+    }
+    document.write('<br>');
+}
+</script>
+<body>
+<script>
+    let num = prompt("숫자를 입력하세요");
+    change_demical(num);
+</script>
+</body>
+</html>
