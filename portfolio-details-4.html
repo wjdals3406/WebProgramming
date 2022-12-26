@@ -93,13 +93,16 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BOAZ-StyleGAN2-2.jpg" alt="">
+                  <img src="assets/img/portfolio/fellowship-2.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BOAZ-StyleGAN2-3.jpg" alt="">
+                  <img src="assets/img/portfolio/fellowship-3.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BOAZ-StyleGAN2-4.jpg" alt="">
+                  <img src="assets/img/portfolio/fellowship-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/fellowship-5.jpg" alt="">
                 </div>
               </div>
 
@@ -111,16 +114,34 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Company Name</strong>: SK telecom</li>
+                <li><strong>Project date</strong>: 2021.06 - 2021.11</li>
+                <li><strong>Award Name</strong>: 대상 (2021.11.22)</li>
+                <li><strong>Stack</strong>: Python, Pytorch</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              <h2>Portfolio Details</h2>
+               <p>
+                <ul>
+                  <li>VLAM 및 특징점 Matching 분야, Base Model(SuperGlue,  YOLO 등) 논문 자체 스터디 진행</li>
+                  <li><strong>2D-3D Point matching</strong></li>
+                    <ul>
+                      <li>2D-2D matching 모델인 SuperGlue 구조를 2D-3D 모델에 맞게 새롭게 변형</li>
+                      <li>모델 성능을 기존 KNN 대비 20~70% 향상시켜 실제 서비스에 적용 예정</li>
+                    </ul>
+                  <li><strong>Panel Detection</strong></li>
+                    <ul>
+                      <li>OpenCV,Pytorch로 COCO data를 활용하여 Synthetic dataset 구축</li>
+                      <ul>
+                        <li>시점, 위치, 회전을 radom하게 적용</li>
+                        <li>실내/외의 다양한 상황 연출이 가능한 데이터셋을 구축하여 Robust한 모델 개발 성공</li>
+                      </ul>
+                      <li>사각형 형태의 간판 영역만을 탐지할 수 있도록 Pytorch를 활용하여 YOLOv5 기반 간판 Point(꼭짓점) Detection 모델 개발</li>
+                      <li>기업 데이터 검출률 97% 달성</li>
+                      <li>50fps로 real-time이 가능한 모델 개발</li>
+                    </ul>
+                </ul>
               </p>
             </div>
           </div>
